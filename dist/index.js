@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Human {
-    constructor(name, age, gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+class Block {
+    constructor(index, hash, previousHash, data, timestamp) {
+        this.index = index;
+        this.hash = hash;
+        this.previousHash = previousHash;
+        this.data = data;
+        this.timestamp = timestamp;
     }
 }
-const jong = new Human('jong', 28, 'male');
-const hi = (person) => {
-    return `HI ${person.name}, you are ${person.age}years old, you are a ${person.gender}.`;
-};
-console.log(hi(jong));
+const genesisBlock = new Block(0, "202020202020", "", "Hello", 123456);
+let blockchain = [genesisBlock];
+console.log(blockchain);
