@@ -1,21 +1,23 @@
 {
-  "name": "type-chain",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "prestart": "tsc",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moonshadow95/type-chain.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/moonshadow95/type-chain/issues"
-  },
-  "homepage": "https://github.com/moonshadow95/type-chain#readme"
+    "name": "type-chain",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/moonshadow95/type-chain.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/moonshadow95/type-chain/issues"
+    },
+    "homepage": "https://github.com/moonshadow95/type-chain#readme",
+    "dependencies": {
+        "tsc-watch": "^4.6.2"
+    }
 }
